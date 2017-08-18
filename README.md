@@ -14,11 +14,13 @@ In my implementation, if the user enters an incorrect sequence, the sequence rep
 * Strict Mode toggle button.
 * Correct answers counter.
 
-
+***
 
 [https://czonios.github.io/simon-game](https://czonios.github.io/simon-game)
 
 Written and coded by [Christos Zonios](https://czonios.github.io).
+
+***
 
 ### My other websites
 
