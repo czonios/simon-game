@@ -1,0 +1,119 @@
+:root {
+    --black: 	   #212121;
+	--white:   	   #E6E6E6;
+	--green:   	   #4CAF50;
+	--greenHover:  #81C784;
+	--red:   	   #f44336;
+	--redHover:    #e57373;
+	--blue: 	   #2196F3;
+	--blueHover:   #64B5F6;
+	--yellow:	   #FFEB3B;
+	--yellowHover: #FFF176;
+	--menuHover:   #616161;
+}
+
+body {
+	background: url(../img/bg.jpeg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: var(--white);
+	font-family: "Open Sans";
+}
+
+.game {
+	display: block;
+	margin-top: 10%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.count {
+	background: var(--black);
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 50px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.menu {
+	padding-bottom: 20px;
+	
+}
+
+.btn-default {
+  border-radius: 0;
+	border: 3px var(--black) solid;
+	margin-bottom: 6px;
+	margin-right: 2px;
+	width: 150px;
+	height: 150px;
+}
+
+.btn-default:hover {
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.75);
+}
+
+.btn-primary {
+	font-size: 1.5em;
+	width: 150px;
+	height: 50px;
+  border: none;
+  background: var(--black);
+	color: var(--white);
+}
+
+.btn-primary:active {
+	background: var(--menuHover);
+  box-shadow: 0px 0px 8px rgba(125, 125, 125, 0.75);
+	border: none;
+}
+
+.btn-primary:focus {
+	background: var(--menuHover);
+  box-shadow: 0px 0px 8px rgba(125, 125, 125, 0.75);
+	border: none;
+}
+
+.btn-primary:hover {
+  background: var(--menuHover);
+  box-shadow: 0px 0px 8px rgba(125, 125, 125, 0.75);
+	border: none;
+}
+
+.green {
+	background: var(--green);
+}
+
+.green:hover {
+	background: var(--greenHover);
+}
+
+.red {
+	background: var(--red);
+}
+	
+.red:hover {
+	background: var(--redHover);
+}
+
+.blue {
+	background: var(--blue);
+}
+
+.blue:hover {
+	background: var(--blueHover);
+}
+
+.yellow {
+	background: var(--yellow);
+}
+
+.yellow:hover {
+	background: var(--yellowHover);
+}
