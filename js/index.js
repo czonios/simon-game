@@ -20,7 +20,12 @@ var colBHover = "#64B5F6";
 var colY =		"#FFEB3B";
 var colYHover = "#FFF176";
 
-var audio = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3', 'https://s3.amazonaws.com/freecodecamp/simonSound2.mp3', 'https://s3.amazonaws.com/freecodecamp/simonSound3.mp3', 'https://s3.amazonaws.com/freecodecamp/simonSound4.mp3'];
+var audio = [
+	document.getElementById("sound1"), 
+	document.getElementById("sound2"), 
+	document.getElementById("sound3"), 
+	document.getElementById("sound4")
+];
 		
 
 
@@ -49,7 +54,7 @@ function playSingle(i) {
 			$(".yellow").css("background", colYHover);
 			break;
 						 }
-	var sound = new Audio(audio[sequence[i]]);
+	var sound = audio[sequence[i]];
 	sound.play();
 	setTimeout("stopSingle(" + i + ")", 350);
 	
@@ -161,21 +166,21 @@ $(document).ready(function() {
 	$(".count").text(count);
 	
 	$('.green').on('click', function() {
-		var sound = new Audio(audio[green]);
+		var sound = audio[green];
 		sound.play();
 		input.push(green);
 		readSequence();
 	});
 		
 	$('.red').on('click', function() {
-		var sound = new Audio(audio[red]);
+		var sound = audio[red];
 		sound.play();
 		input.push(red);
 		readSequence();
 	});
 		
 	$('.blue').on('click', function() {
-		var sound = new Audio(audio[blue]);
+		var sound = audio[blue];
 		sound.play();
 		input.push(blue);
 		readSequence();
@@ -183,7 +188,7 @@ $(document).ready(function() {
 		
 		
 	$('.yellow').on('click', function() {
-		var sound = new Audio(audio[yellow]);
+		var sound = audio[yellow];
 		sound.play();
 		input.push(yellow);
 		readSequence();
