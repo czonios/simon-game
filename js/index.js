@@ -87,6 +87,7 @@ function playSequence() {
 		if (playing == false)
 			return;
 		console.log("playSequence()");
+		$(".notification").html("");
 		playSingle(0);
 }
 
@@ -153,7 +154,7 @@ function play() {
 	}
 	ready = false;
 	// remove notification
-	$(".notification").html("");
+	$(".notification").html("");	
 	// update count
 	$(".count").text(count);
 	// add to the sequence and play it
